@@ -1,0 +1,14 @@
+version:'3'  
+  services: 
+    web:
+      image: webmount:lastest
+      build: .
+      volumes:
+        - myapp:/home/namanh/Documents/web/app
+      ports:
+        - 8001:80
+  volumes:
+    myapp:
+      external: true 
+
+ 
